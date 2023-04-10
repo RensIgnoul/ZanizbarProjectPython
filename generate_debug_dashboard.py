@@ -333,7 +333,7 @@ for panel in PANELS:
     panel_data = {
 	'title': panel['title'],
 	'type': panel['type'],
-	'datasource':'InfluxDB_v2_Flux
+	'datasource':'InfluxDB_v2_Flux',
 	'gridPos':
 	    {
 		'h': 8,
