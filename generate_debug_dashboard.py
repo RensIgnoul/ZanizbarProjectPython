@@ -68,7 +68,7 @@ PANELS = [
         "query": """from(bucket: "sis")
   |> range(start: -30d)
   |> filter(fn: (r) => r["_measurement"] =="gateway_debugging")
-  |> filter(fn: (r) => r["_field"]=="bus_voltage")
+  |> filter(fn: (r) => r["_field"]=="voltage")
   |> aggregateWindow(every: 5m, fn: mean, createEmpty: false)
   |> yield(name: "mean")""",
         "w": 8,
@@ -224,7 +224,7 @@ PANELS = [
         "query": """from(bucket: "sis")
   |> range(start: -30d)
   |> filter(fn: (r) => r["_measurement"] =="gateway_debugging")
-  |> filter(fn: (r) => r["_field"]=="p")
+  |> filter(fn: (r) => r["_field"]=="percentage")
   |> aggregateWindow(every: 5m, fn: mean, createEmpty: false)
   |> yield(name: "mean")""",
         "w": 8,
