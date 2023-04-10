@@ -580,7 +580,7 @@ PANELS = [
         "lineWidth": 1,
         "fillOpacity": 10,
         "gradientMode": "none",
-        "spanNulls": false,
+        "spanNulls": False,
         "showPoints": "auto",
         "pointSize": 5,
         "stacking": {
