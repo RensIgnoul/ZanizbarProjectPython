@@ -208,7 +208,6 @@ PANELS = [
     "overrides": []
   },
   },
-    },
     {
 	'title':'Power',
 	'type':'timeseries',
