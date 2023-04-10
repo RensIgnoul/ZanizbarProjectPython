@@ -187,7 +187,7 @@ PANELS = [
         "query": """from(bucket: "flwsb")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
   |> filter(fn: (r) => r["_measurement"] == "sensor_data")
-  |> filter(fn: (r) => r["_field"] == "air_pressure")
+  |> filter(fn: (r) => r["_field"] == "pressure_BME")
   |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)
   |> yield(name: "mean")""",
         "w": 8,
