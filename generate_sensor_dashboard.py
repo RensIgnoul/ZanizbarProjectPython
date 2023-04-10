@@ -433,7 +433,7 @@ PANELS = [
                 "thresholds": {
                     "mode": "absolute",
                     "steps": [
-                        {"color": "green", "value": null},
+                        {"color": "green", "value": None},
                         {"color": "red", "value": 80},
                     ],
                 },
@@ -483,7 +483,7 @@ PANELS = [
                 "thresholds": {
                     "mode": "absolute",
                     "steps": [
-                        {"color": "green", "value": null},
+                        {"color": "green", "value": None},
                         {"color": "red", "value": 80},
                     ],
                 },
